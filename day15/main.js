@@ -13,7 +13,6 @@ function factorial(n)
   else{
     for(let i=n; i>0;i--){
         product *= i
-        console.log(product)
     }
   }
   return product
