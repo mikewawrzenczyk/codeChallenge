@@ -1,0 +1,136 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.apod{
+  display: block;
+  margin: 0 auto;
+}
+section{
+  padding-left: 10px;
+  background-size:auto
+}
+html,body{
+  height:100%;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  
+}
+nav img{
+  padding-top:10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+nav h1{
+  padding-top:20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+nav span{
+  padding-top:50px;
+  padding-left: 10px;
+  padding-right: 70px;
+}
+
+iframe{
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: center; */
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: whitesmoke;
+}
+.nasalogo{
+  height:150px;
+}
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: whitesmoke;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: whitesmoke;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border:1px solid #ecf0f1;
+  background-color: rgba(255,255,255,0.5);
+  padding:5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"], focus {
+  color: whitesmoke;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* .datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 19px;
+  background-color: grey;
+}
+.datepicker-toggle-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-image: url('../img/calendar.png');
+  border: solid red 2px;
+}
+.datepicker-input {
+  background-color: grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+} */
