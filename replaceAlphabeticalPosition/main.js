@@ -112,8 +112,9 @@ function alphabetPosition(text) {
 
 //regex one liner solution
 //let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split('').map(ch => ch.charCodeAt(0) - 64).join(' ')
+// arrow function taking argument of text. Then takes text to uppercase, uses a replace method to look pull a letter from A-Z, split the string to an array, then use an array method map on each element using the charcode method A.charCodeAt(0) would return 65, minus 64 returns 1. B would return 66 -64 = 2 etc. Then it joins it back together as a string with a space between each element.
 
-//
+
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."), "||| 20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11");
 console.log(alphabetPosition("The narwhal bacons at midnight."), "||| 20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
