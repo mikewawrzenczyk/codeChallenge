@@ -11,7 +11,8 @@ function reverseWords(str) {
   // return str.split(' ').reverse().join(' ')
   //Take string split it into an array, map the array by returning each word as an element split, reversed and joined.
   //Finally join the array by spaces.
-  return str.split(' ').map(e => {return e.split('').reverse().join('')}).join(' ')
+  return str.split(' ').map(element => element.split('').reverse().join('')).join(' ')
+  // return str.split(' ').map(e => {return e.split('').reverse().join('')}).join(' ')
 }
 console.log(reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
 console.log(reverseWords('apple'), 'elppa');
