@@ -31,7 +31,8 @@ Don't forget to convert the percent parameter as a percentage in the body of you
 
 function nbYear(p0, percent, aug, p) {
     let years = 0
-    while(p0 <= p){
+    while(p0 < p){
+        //you need to round the population 
         p0 += Math.floor(p0 * (percent / 100) + aug)
         years++
         // console.log(p0)
