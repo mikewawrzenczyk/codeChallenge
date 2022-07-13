@@ -17,7 +17,6 @@ function enough(cap, on, wait) {
     // your code here
     let people = on + wait
     let space = cap - people
-    // console.log(space)
     return cap > people ? 0:Math.abs(space)
 }
 
