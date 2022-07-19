@@ -4,6 +4,15 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 function removeChar(str){
     //You got this!
-   
+    let array = str.split('')
+    array.shift()
+    array.pop()
+    return array.join('')
+    //  return str.slice(1, -1); One Liner
 }
+
+console.log(removeChar('eloquent'), 'loquen');
+console.log(removeChar('country'), 'ountr');
+console.log(removeChar('person'), 'erso');
+console.log(removeChar('place'), 'lac');
    
