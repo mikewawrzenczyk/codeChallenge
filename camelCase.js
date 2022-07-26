@@ -20,7 +20,7 @@ function toCamelCase(str){
     else{
         return str
     }
-    //itterate through array and take each element of the array by uppercasing first character anbd concatenating the rest
+    //itterate through array and take each element of the array by uppercasing first character anbd concatenating the rest, we start at index 1 because first word we leave lower case or if its uppercase you leave it as well
     for(let i=1; i<stringSplit.length;i++){
         stringSplit[i] = stringSplit[i].charAt(0).toUpperCase() + stringSplit[i].slice(1)
     }
