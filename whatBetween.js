@@ -9,7 +9,6 @@ b = 4
 
 */
 function between(a, b) {
-    // your code here
     let inBetween = []
     for(let i=a;i<=b;i++){
         inBetween.push(i)
