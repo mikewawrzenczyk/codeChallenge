@@ -12,4 +12,7 @@ const reverseSeq = n => {
     return sequenceArray
 };
 
+//One Liner
+//return Array(n).fill(0).map((e, i) => n - i );
+
 console.log(reverseSeq(5), [5, 4, 3, 2, 1]);
