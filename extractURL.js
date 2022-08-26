@@ -7,8 +7,9 @@ Write a function that when given a URL as a string, parses out just the domain n
 */
 
 function domainName(url){
-    //your code here
-    return url.replace('http://','').replace('https://','').replace('www.','').split(/[/?#]/)[0].split('.')[0]
+    //this was easiest with reg ex
+    //replace http:// with nothing, replace https:// with nothing, split after the last . to remove the suffix.
+    return url.replace('http://','').replace('https://','').replace('www.','').split('.')[0]
 }
 
 console.log(domainName("http://google.com"), "google");
