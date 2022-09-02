@@ -9,15 +9,13 @@ Return the total figure the individual will receive as a string prefixed with "�
 */
 
 function bonusTime(salary, bonus) {
-    // your code here
     if(bonus){
-        // let bonusSalary = salary * 10
         return `£${salary *10}`
     }
     return `£${salary}`
-    
 }
-
+//Better one liner ternary
+//return bonus ? `£${10 * salary}` : `£${salary}`;
 
 console.log(bonusTime(10000, true), '£100000');
 console.log(bonusTime(25000, true), '£250000');
