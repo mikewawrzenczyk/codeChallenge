@@ -22,4 +22,7 @@ function minMax(arr){
     arr.sort((a,b) => a-b)
     // return `[${arr[0]},${arr[arr.length-1]}]`
     return [arr[0],arr[arr.length-1]]
+
+//one liner using math min and max and spread operator to dump in the array into the functions
+//return [Math.min(...arr), Math.max(...arr)];
 }
