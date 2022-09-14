@@ -9,7 +9,6 @@ For example(Input --> Output):
  1 --> [1]
 */
 function monkeyCount(n) {
-    // your code here
     monkeyArray = []
     for(let i =1; i <= n; i++){
         monkeyArray.push(i)
