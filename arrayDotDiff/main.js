@@ -15,8 +15,8 @@ function arrayDiff(a, b) {
   //E examples below
   //Psuedo Code
   //Filter all values of list B out of List A using an !array.includes method
-  //Now take this newly filtered list and filter any values that are also in list B
-  //return the last filtered list
+  //this should return a new string with only values that are not included in B
+  //we are using a filter method to filter out each item that is NOT included in the B array.
 
   return a.filter(function(item) {
     return !b.includes(item); 
