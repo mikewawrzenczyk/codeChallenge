@@ -14,6 +14,8 @@ The input string can be of arbitrary length - in particular, it may be empty. Al
 function DNAtoRNA(dna) {
     // create a function which returns an RNA sequence from the given DNA sequence
     return dna.replaceAll('T', 'U')
+    //replace with global also works 
+    //return dna.replace(/T/g, "U")
 }
 
 console.log(DNAtoRNA("TTTT"), "UUUU")
