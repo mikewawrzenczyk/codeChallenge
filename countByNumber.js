@@ -13,12 +13,12 @@ countBy(2,5) === [2,4,6,8,10]
 
 function countByNum(x, n) {
     let z = [];
+    //we need to iterate by n amount of times and multiply the for look increment by x and push into the array.
     for(let i=1;i<=n;i++){
         z.push(i*x)
-        // i+=x
     }
     return z;
-  }
+}
 
 console.log(countByNum(1,10), [1,2,3,4,5,6,7,8,9,10], "Array does not match")
 console.log(countByNum(2,5), [2,4,6,8,10], "Array does not match")
