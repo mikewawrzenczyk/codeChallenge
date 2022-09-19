@@ -10,13 +10,16 @@ Example: (Input --> Output)
 
 function isIsogram(str){
   //iterate through the array and check each element againstthe next.
-  var i, j;
-  str = str.toLowerCase();
-  for(i = 0; i < str.length; ++i)
-    for(j = i + 1; j < str.length; ++j)
-      if(str[i] === str[j])
-        return false;
-  return true;
+  // var i, j;
+  // str = str.toLowerCase();
+  // for(i = 0; i < str.length; ++i)
+  //   for(j = i + 1; j < str.length; ++j)
+  //     if(str[i] === str[j])
+  //       return false;
+  // return true;
+
+  return new Set(str.toUpperCase()).size == str.length;
+  //one line answer?
 }
 
 
