@@ -47,7 +47,12 @@ function newAvg(arr, newavg) {
         return lastContributor
 }
 
+/*Another Solution
+    if (arr.length === 0) return newavg;
+    const actualAvg = arr.reduce((a,c) => a+c, 0) / arr.length;
+    const amtToAdd = Math.ceil(arr.length * (newavg - actualAvg) + newavg); 
+    if (amtToAdd > 0) return amtToAdd; else throw ('Expected New Average is too low');
+*/
+
     console.log(newAvg([14, 30, 5, 7, 9, 11, 16], 90, 628))
     console.log(newAvg([14, 30, 5, 7, 9, 11, 15], 92, 645))
-//     expect(function(){ newAvg([14, 30, 5, 7, 9, 11, 15], 2); }).to.throw("Expected New Average is too low");
-// })})
