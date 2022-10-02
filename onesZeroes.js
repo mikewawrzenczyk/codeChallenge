@@ -18,11 +18,7 @@ However, the arrays can have varying lengths, not just limited to 4.
 
 */
 const binaryArrayToNumber = arr => {
-    // your code
-    // const parseArray = arr => {
-    //     return arr.reduce((acc, val) => {
-    //        return (acc << 1) | val;
-    //     });
+    /*In this method we iterate over the binary array and construct a decimal based on the corresponding binary numbers. We will use the left shift operator (<<) to shift the accumulated value to left by one bit every time and return the bitwise OR (|) of the shifted accumulated value and current value.*/
     return arr.reduce((acc, val) =>{ return (acc <<1) | val})
 };
 
