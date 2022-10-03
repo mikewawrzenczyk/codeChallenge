@@ -19,12 +19,9 @@ Notes:
 */
 
 function points(games) {
-    // your code here
-    // return games.reduce((acc,c) => acc + Number(c.charAt(0)))
-    // let result = games.split(':')
-    // console.log(games)
-    
-return games.reduce((output,current)=>{ return output += current[0]>current[2] ? 3 : current[0] === current[2] ? 1 : 0;  },0)
+
+    //reduce games array by returning accumulator output with a ternary checking for if current character 0 is greater than current character 2 adding 3 points, if they are the same adding 1 and 0 if it is otherwise.
+    return games.reduce((output,current)=>{ return output += current[0]>current[2] ? 3 : current[0] === current[2] ? 1 : 0;  },0)
 }
 
 console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) , 30);
