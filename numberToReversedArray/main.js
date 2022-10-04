@@ -9,7 +9,7 @@ Example:
 */
 
 function digitize(n) {
-    //make an arrow with Array.from(String(variable), Number)
+    //make an arrow with Array.from(String(variable), Number) then reverse it
     return Array.from(String(n), Number).reverse()
 }
 
