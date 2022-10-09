@@ -22,9 +22,15 @@ Attention: If the number has leading zeros the amount of digits should be consid
 
 function incrementString (strng) {
     // return incrementedString
-    if (!Number.isInteger(strng[strng.length-1])){
-        return `${strng}1`
-    }
+    // console.log(strng[strng.length-1])
+    // console.log(Number.isInteger(strng[strng.length-1]))
+    // console.log(Number.isInteger('0'))
+    // if (Number.isInteger(Number(strng[strng.length-1]))){
+    //     return `${strng}1`
+    // }
+    let letters = strng.replace(/[^a-zA-Z]+/g, '');
+    let numbers = strng.replace( /^\D+/g, '')
+    return letters + (Number(numbers)+1)
 }
 
 console.log(incrementString("foobar000"), "foobar001")
