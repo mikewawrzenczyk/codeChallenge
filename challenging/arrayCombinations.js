@@ -14,8 +14,10 @@ You have an array full of arrays. Map through the parent array and make sure eac
 */
 
 function solve(array){
-    
- return array.map((x,i,arr) => [...new Set(arr)]).reduce((acc,c,arr2) => acc *= arr2.length)
+
+//  return array.map((x,i,arr) => [...new Set(arr)]).reduce((acc,c,arr2) => acc *= arr2.length)
+//create a map of each sub array with a new set, grab the size and reduce to multiply the length of each sub array
+ return array.map(arr1 => new Set(arr1).size).reduce((acc,c)=>acc*c,1)
 }
 
 console.log(solve([[1,2],[4],[5,6]]),4)
