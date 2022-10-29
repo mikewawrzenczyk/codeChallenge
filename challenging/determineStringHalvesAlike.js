@@ -36,12 +36,15 @@ var halvesAreAlike = function(s) {
     let half = s.length / 2 
     let a = s.substring(0,half)
     let b = s.substring(half, s.length)
+    
     // return `${a} -> ${b}`
 
-    return a.match(/[aeiou]/gi).length === b.match(/[aeiou]/gi).length
+    // return a.match(/[aeiou]/gi || []).length === b.match(/[aeiou]/gi || []).length
+    return (a.match(/[aeiou]/gi) || []).length === (b.match(/[aeiou]/gi) || []).length
 };
 
 console.log(halvesAreAlike('book'), true)
 console.log(halvesAreAlike('textbook'), false)
+console.log(halvesAreAlike(''), true)
 
 
