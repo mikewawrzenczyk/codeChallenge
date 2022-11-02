@@ -19,10 +19,15 @@ You may assume the input only contain English alphabet and spaces.
 function transformStr(str){
     //split str " " ->  reverse -> join
     //split str " " -> map l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()
-    let reversedStr = str.split(' ').reverse().join(' ')
-    let transformedStr = reversedStr.split('').map(l => l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()).join(' ')
-    //this arrow function in map has an implicit return
-    return transformedStr
+    // let reversedStr = str.split(' ').reverse().join(' ')
+    // //this arrow function in map has an implicit return
+    // let transformedStr = reversedStr.split('').map(l => l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()).join('')
+    // return transformedStr
+
+
+
+    //one liner
+    return str.split(' ').reverse().join(' ').split('').map(l => l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()).join('')
 }
 
 console.log(transformStr("Example Input"), "iNPUT eXAMPLE")
