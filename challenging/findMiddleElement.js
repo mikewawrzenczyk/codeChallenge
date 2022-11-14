@@ -1,5 +1,5 @@
 /*
-As a part of this Kata, you need to create a function that when provided with a triplet, returns the index of the numerical element that lies between the other two elements.
+You need to create a function that when provided with a triplet, returns the index of the numerical element that lies between the other two elements.
 
 The input to the function will be an array of three distinct numbers (Haskell: a tuple).
 
@@ -18,9 +18,15 @@ gimme([5, 10, 14]) => 1
 */
 
 function gimme(triplet){
-
+    //index of element in between.
+    //indx -> el in the middle
+    //copy array and sort it
+    //find the indexOf in original array of spread array sorted pulling the 1st index
+    return triplet.indexOf([...triplet].sort((a,b) => a -b)[1])
 }
 
-doTest([-2, -3.2, 1], 0);
-doTest([-5.2, -10.6, 14], 0);
+console.log(gimme([5, 10, 14]), '1')
+console.log(gimme([2, 3, 1]), '0')
+console.log(gimme([-2, -3.2, 1]), '0')
+console.log(gimme([-5.2, -10.6, 14]), '0')
 
