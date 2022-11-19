@@ -18,8 +18,8 @@ function averageLength(array) {
     //find average by adding up length of each element of array and divide by length of original array
     //round average up
     //return new array by mapping letter in each element and then repeating for the average
-
-    let averageInOriginalArray = Math.round(array.map(words => words.length).reduce((acc, c) => acc + c,0) / array.length)
+    //const avgLength = Math.round(array.join('').length / arr.length)
+    const averageInOriginalArray = Math.round(array.map(words => words.length).reduce((acc, c) => acc + c,0) / array.length)
     return array.map(element => element[0].repeat(averageInOriginalArray))
 
 }
