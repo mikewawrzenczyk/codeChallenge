@@ -12,7 +12,7 @@ last('take me to semynak'), ['take', 'me', 'semynak', 'to']
 
 function last(x){
     //split sort
-    //sort -> grab last letter of word using slice
+    //sort -> grab last letter of word using charCodeAt
     //
     return x.split(' ').sort((a,b) => a.charCodeAt(a.length -1) - b.charCodeAt(b.length -1))
 }
