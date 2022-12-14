@@ -16,9 +16,32 @@ Output: true
 */
 
 function containsDuplicate(nums){
-    const uniqueNums = [... new Set(nums)]
-    //return (uniqueNums.length === nums.length) ? false : true
-    return uniqueNums.length !== nums.length
+    // const uniqueNums = [... new Set(nums)]
+    // //return (uniqueNums.length === nums.length) ? false : true
+    // return uniqueNums.length !== nums.length
 
     //const containsDuplucate = nums => nums.length != new Set(nums).size ONE LINER
+    //set is better for smaller data arrays, object solution with hashmap is faster for large arrays 10k plus
+
+
+    //Hashmap object solution
+    let numsMap ={}
+    //create hashmap
+    for(let i=0 ; i< nums.length;i++){
+        //goes to first number
+        let num = nums[i]
+        //checks to see if that number exists in object, if no then set to true
+        if(numsMap[num]){
+            return true
+        }
+        else{
+        //if number property already exists in object we return false
+            return false
+        }
+    }
+
+    fhf xsjrfeherfjherfhjrhje dueyeducfhcvccvcvcvxbbbbbbbbbbvbvbvbvbvvvvbvbvbvbvbvvvbv
+    vvbbvvbvbvb bvbbccbcbccbcbbbcbcbcbcbccbcbbbccbcbbccbbccbbcbbnbbbccbbbbbbbbcbcbcbcbccvbvbvbvbvbnbnbbnbnbbnbnbnv nbgggngngnggggggggggggggggngngngngngngngnngngnngngngngngn ngn bnbnnbbn b nbn bnbnnbbn
+    ikpyoph69866
+
 }
