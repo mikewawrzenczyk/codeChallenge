@@ -12,7 +12,9 @@ Examples
 */
 
 function shortcut(string){
-    return string.split('').filter(element => element != "a" && element != "e" && element !="i" && element !="o" && element !="u").join('')
+    // return string.split('').filter(element => element != "a" && element != "e" && element !="i" && element !="o" && element !="u").join('')
+    //regex answer
+    return string.replace(/[aeiou]/g,'')
 }
 
 console.log(shortcut('hello'), 'hll')
