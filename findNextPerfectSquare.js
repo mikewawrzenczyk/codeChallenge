@@ -15,14 +15,15 @@ Examples:(Input --> Output)
 
 function findNextSquare(sq) {
     // Return the next square if sq is a perfect square, -1 otherwise
-    // console.log(Math.sqrt(sq))
-    const squareRoot = Math.sqrt(sq)
-    if (squareRoot * squareRoot === sq)
-        return Math.pow((squareRoot+1),2)
-    else
-        return -1;
-
+    // const squareRoot = Math.floor(Math.sqrt(sq))
+    // if (squareRoot * squareRoot === sq)
+    //     return Math.pow((squareRoot+1),2)
+    // else
+    //     return -1
+    return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2)
 }
+
+//one liner return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2)
 
 console.log(findNextSquare(121), 144, "Wrong output for 121");
 console.log(findNextSquare(625), 676, "Wrong output for 625");
