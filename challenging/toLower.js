@@ -39,7 +39,9 @@ Constraints:
  * @return {string}
  */
 var toLowerCase = function(s) {
-    return s.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter).join('')
+    // return s.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter).join('')
+    //big brain solution :D
+    return s.toLowerCase()
 }
 
 console.log(toLowerCase('Hello'), 'hello')
