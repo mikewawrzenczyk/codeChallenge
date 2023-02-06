@@ -9,7 +9,7 @@ divisors(13); // should return "13 is prime"
 
 function divisors(integer) {
     let divisorsArray=[]
-
+    //start 2 and loop while integer is greater than i
     for(let i = 2; i < integer; i++){
         if(integer % i === 0){
             divisorsArray.push(i)
