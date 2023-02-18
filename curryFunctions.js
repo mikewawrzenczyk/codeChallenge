@@ -16,12 +16,15 @@ You must not mutate the original array.
 
 // console.log(multiplyAll([1, 2, 3],2) , [2, 4, 6])
 
+//curry functions takes each argument as a returned function
 function multiplyAll(array) {
     return function(multiplier){
             return array.map(element => element *multiplier)
-
     }
 }
+
+//one liner arrow function
+//multiplyAll = a => x => a.map(e => e * x);
 
 
 
