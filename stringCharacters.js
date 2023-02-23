@@ -26,6 +26,17 @@ function solve(s){
     return counts
 }
 
+/*Reg ex solution
+const solve = x => {
+  let u = x.match(/[A-Z]/g)||[]
+  let d = x.match(/[a-z]/g)||[]
+  let n = x.match(/[0-9]/g)||[]
+  let s = x.match(/[^A-Z0-9]/gi)||[]
+  return [u.length, d.length, n.length, s.length]
+}
+
+*/
+
 console.log(solve(""),[0,0,0,0]);
 console.log(solve("aAbBcC"),[3,3,0,0]);
 console.log(solve("aAbBcCcCcC"),[5,5,0,0]);
