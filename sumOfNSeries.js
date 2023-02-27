@@ -22,14 +22,20 @@ Examples:(Input --> Output)
 */
 function SeriesSum(n)
 {
-  let sum = 0;
-  if(n ===1)
-    return '1.00'
-  for(let i = 0; i < n; i++){
-    sum += 1/(1+ n* 3)
+  // let sum = 0;
+  // if(n ===1)
+  //   return '1.00'
+  // for(let i = 0; i < n; i++){
+  //   sum += 1/(1+ n* 3)
+  // }
+  // sum++
+  // return sum.toFixed(2) 
+  let sum  =0
+  for (let s = 0, i = 0; i < n; i++) {
+    sum += 1 / (1 + i * 3)
   }
-  sum++
-  return sum.toFixed(2) 
+  
+  return sum.toFixed(2)
 }
 
 console.log(SeriesSum(1), "1.00")
