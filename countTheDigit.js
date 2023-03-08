@@ -16,12 +16,13 @@ The function returns 3 because the digit d=0 appears 3 times: in 0 and 100 (note
 */
 
 function nbDig(n, d) {
-
-    var res=0;
-    for (var g=0;g<=n;g++){
-      var square=(g*g+"").split("");
-      square.forEach((s)=>s==d?res++:null)
-    }return res;
+    let counterOfD=0
+    for (let g=0;g<=n;g++){
+      //square the current count in the for loop, split it into an array
+      let square=(g*g+"").split("")
+      //go through each element of array, check to see if each element is equal to d with a ternary, if so increase 
+      square.forEach((element)=>element==d?counterOfD++:null)
+    }return counterOfD
 }
 
 console.log(nbDig( 5750, 0),  4700, "n = 5750, d = 0");
