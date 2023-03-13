@@ -10,8 +10,8 @@ Note: Math.pow and some other Math functions like eval() and ** are disabled.
 
 function numberToPower(number, power){
     // console.info(Math.log2(1024));
-    var total = 1;
-    for (var i = 1; i <= power; i++) { 
+    let total = 1;
+    for (let i = 1; i <= power; i++) { 
       total = total * number;
     }
     return total;
