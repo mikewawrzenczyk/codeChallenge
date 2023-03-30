@@ -16,6 +16,9 @@ Notes
     It's guaranteed that a divisor is Found .
     Input >> Output Examples
 
+
+
+
 maxMultiple (2,7) ==> return (6)
 
 Explanation:
@@ -33,10 +36,20 @@ maxMultiple (37,200) ==> return (185)
 Explanation:
 
 (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
+
+ N is divisible by divisor
+
+    N is less than or equal to bound
+
+    N is greater than 0.
 */
 
 function maxMultiple(divisor, bound){
-    //your code here
+    for(let i=bound; i>=0; i--){
+        if(i % divisor === 0)
+            return i
+        
+    }
 }
 
 console.log(maxMultiple(2,7),6);
