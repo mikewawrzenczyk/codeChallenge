@@ -15,6 +15,9 @@ Content is in fact not necessary in the body of the function "evaporator", you c
 */
 
 function evaporator(content, evap_per_day, threshold){ 
+    /*
+    In this function, we first initialize the current percentage to 100%, the number of days to 0, and then we loop until the current percentage falls below the threshold. In each iteration, we reduce the current percentage by the percentage of foam or gas lost every day, and we increment the number of days. Finally, we return the number of days it took for the evaporator to reach the threshold percentage.
+    */
     let current_percentage = 100;
     let days = 0;
     
