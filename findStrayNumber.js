@@ -16,17 +16,18 @@ function stray(numbers) {
     let hashmap = {}
 
     for(let number of numbers){
-        //1, 0, 0 
         hashmap[number] = (hashmap[number] || 0) + 1
     }
 
     for(const value in hashmap){
-        // console.log(value)
         if(hashmap[value] === 1){
             return Number(value)
         }
     }
 }
+
+//one liner arrow function
+//const stray = nums => nums.reduce((a, b) => a ^ b);
 
 console.log(stray([1, 1, 2]), 2);
 console.log(stray([1, 2, 1]), 2);
