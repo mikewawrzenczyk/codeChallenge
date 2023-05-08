@@ -3,7 +3,7 @@ Find the total sum of internal angles (in degrees) in an n-sided simple polygon.
 */
 
 function angle(n) {
-    //code here
+    //FORMULA is (n-2) * 180
     return (n-2) *180
 }
 
