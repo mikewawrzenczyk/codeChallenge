@@ -1,5 +1,6 @@
 /*
 Fix this function
+//solution wrong variable was returned
 */
 function addFive(num) {
     var total = num + 5
