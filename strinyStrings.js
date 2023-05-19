@@ -27,6 +27,9 @@ function stringy(size) {
     return stringy
 }
 
+//one liner
+//const stringy = size => "10".repeat(size).slice(0,size);
+
 for(let i = 0; i < 10; ++i){
     let parameter = (Math.random() * 50 + 1) | 0;
     console.log(stringy(parameter).length, parameter, 'Wrong length on ' + parameter);
