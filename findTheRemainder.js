@@ -32,6 +32,9 @@ function remainder(n, m){
     }
 }
 
+//One liner
+//return a > b ? a % b : b % a;
+
 console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible. For input n = 17, m = 5');
 console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter');
 console.log(remainder(1, 0), 'Divide by zero should return NaN');
