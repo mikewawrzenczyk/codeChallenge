@@ -17,10 +17,14 @@ sumMul(4, -7)  ==> "INVALID"
 */
 
 function sumMul(n,m){
-    let nArray = []
-    for(let i = 0; i < m;i++)
-        nArray.push()
-    return nArray.reduce((acc, c) => c*2 + acc,0)
+    if (n>=m) return 'INVALID'
+    let i = n
+    let total = 0
+    while(i <m){
+        total += i
+        i+=n
+    }
+    return total
 }
 
 console.log(sumMul(0,0),"INVALID");
