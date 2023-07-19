@@ -15,8 +15,8 @@ Zero alone is fine, don't worry about it. Poor guy anyway
 */
 
 function noBoringZeros(n) {
-  // your code
   return Number(n.toString().replace(/0+$/, ''));
+  //return a Number that makes input a string so that a regex expression can be used to replace all 0s with nothing.
 }
 
 console.log(noBoringZeros(1450), 145)
